@@ -25,7 +25,18 @@ client.reverseGeoCode(14.602325069654146, 121.02413661450402).then(data => {
   console.log(data);
 });
 
-//Will return this object
+// Will return this object if from Google API.
+{
+  provider: 'Google',
+  full_address: '42 E.Fernandez, Manila, Metro Manila, Philippines',
+  street_number: '42',
+  route: 'E.Fernandez',
+  locality: 'Manila',
+  administrative_area_level_1: 'Metro Manila',
+  country: 'Philippines'
+}
+
+//Will return this object if there are documents in your database within the range.
 {
   provider: 'Google',
   full_address: '133 F. Manalo, Batis, San Juan, 1500 Metro Manila, Philippines',
