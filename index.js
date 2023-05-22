@@ -136,11 +136,12 @@ class Client {
           });
 
           onRangeCoords[index].data["from"] = "MongoDB Database";
-          onRangeCoords[index].data["range"] = `${leastDistance * 1000}`;
+          onRangeCoords[index].data["range"] = leastDistance * 1000;
           return onRangeCoords[index].data;
         }
       } else {
         exact.data["from"] = "MongoDB Database";
+        exact.data["range"] = 0;
         return exact.data;
       }
     } catch (error) {
