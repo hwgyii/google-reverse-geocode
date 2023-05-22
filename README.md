@@ -25,9 +25,7 @@ client.reverseGeoCode(14.602325069654146, 121.02413661450402).then(data => {
   console.log(data);
 });
 
-```
-Will return this object
-
+//Will return this object
 {
   provider: 'Google',
   full_address: '133 F. Manalo, Batis, San Juan, 1500 Metro Manila, Philippines',
